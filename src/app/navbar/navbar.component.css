@@ -1,0 +1,11 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* vamos a crear un hover que ponga en negrita el texto y lo subraye en la parte inferior */
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.nav-item {
+    margin-right: 2.1rem;
+    font-size: 1.2rem;
+}

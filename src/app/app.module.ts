@@ -8,6 +8,8 @@ import { MiComponenteComponent } from './mi-componente/mi-componente.component';
 import { MiComponente2Component } from './mi-componente2/mi-componente2.component';
 import { FooterComponent } from './footer/footer.component';
 import { CharacterListComponent } from './character-list/character-list.component';
+import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { CharacterListComponent } from './character-list/character-list.componen
     MiComponenteComponent,
     MiComponente2Component,
     FooterComponent,
-    CharacterListComponent
+    CharacterListComponent,
+    HeaderComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
