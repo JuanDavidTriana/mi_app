@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CharacterListComponent } from './character-list/character-list.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     FooterComponent,
     CharacterListComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
