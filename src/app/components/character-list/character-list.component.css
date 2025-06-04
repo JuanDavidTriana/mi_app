@@ -1,0 +1,208 @@
+/* si usan css */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* si usan SCSS 
+@import 'boostrap/scss/bootstrap.scss';
+*/
+
+/* Sección principal de personajes */
+.characters-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-bg);
+}
+
+/* Encabezado de la sección */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Título principal */
+.section-title {
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* Subtítulo descriptivo */
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-footer-policy);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contenedor de las tarjetas de personajes */
+.characters-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Tarjeta individual de personaje */
+.character-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del personaje y badge de estado */
+.character-image {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%; /* Aspect ratio 1:1 */
+}
+
+.character-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover .character-image img {
+  transform: scale(1.05);
+}
+
+/* Badge de estado (Alive, Dead, Unknown) */
+.status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.status-badge.alive {
+  background-color: var(--color-accent);
+}
+.status-badge.dead {
+  background-color: var(--color-danger);
+}
+.status-badge.unknown {
+  background-color: var(--color-footer-policy);
+}
+
+/* Información textual del personaje */
+.character-info {
+  padding: 1.5rem;
+}
+
+.character-name {
+  font-size: 1.4rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.character-details {
+  margin-bottom: 1.5rem;
+}
+
+.character-details p {
+  margin-bottom: 0.5rem;
+  color: var(--color-footer-policy);
+  font-size: 0.95rem;
+}
+
+.character-details i {
+  width: 20px;
+  color: var(--color-link);
+  margin-right: 8px;
+}
+
+/* Botón para ver más información */
+.btn-more-info {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-more-info:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-more-info i {
+  font-size: 1.1rem;
+}
+
+/* Contenedor de carga */
+.loading-container {
+  text-align: center;
+  padding: 3rem;
+}
+
+.loading-text {
+  margin-top: 1rem;
+  color: var(--color-footer-policy);
+  font-size: 1.1rem;
+}
+
+/* Mensaje de error */
+.alert-danger {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.alert-danger i {
+  font-size: 1.2rem;
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 768px) {
+  .characters-section {
+    padding: 2rem 1rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  .character-name {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .character-info {
+    padding: 1rem;
+  }
+  .btn-more-info {
+    padding: 0.6rem;
+  }
+}

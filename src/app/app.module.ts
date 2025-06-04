@@ -4,22 +4,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MiComponenteComponent } from './mi-componente/mi-componente.component';
-import { MiComponente2Component } from './mi-componente2/mi-componente2.component';
-import { FooterComponent } from './footer/footer.component';
-import { CharacterListComponent } from './character-list/character-list.component';
-import { HeaderComponent } from './header/header.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HeroComponent } from './hero/hero.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CharacterListComponent } from './components/character-list/character-list.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MiComponenteComponent,
-    MiComponente2Component,
     FooterComponent,
     CharacterListComponent,
-    HeaderComponent,
     NavbarComponent,
     HeroComponent
   ],

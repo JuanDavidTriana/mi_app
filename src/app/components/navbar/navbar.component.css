@@ -1,0 +1,47 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* vamos a crear un hover que ponga en negrita el texto y lo subraye en la parte inferior */
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.nav-item {
+    margin-right: 2.1rem;
+    font-size: 1.2rem;
+}
+
+.navbar{
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.navbar-scrolled {
+    background-color: var(--color-footer-bg, #232323);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.brand-logo{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.navbar-scrolled .brand-logo {
+    height: 40px;
+}
+
+.nav-link {
+    color: var(--color-footer-link, #e0e0e0);
+    transition: all 0.3s ease;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    margin: 0 0.2rem;
+    position: relative;
+}
+
+.nav-item i {
+    margin-right: 0.5rem;
+}

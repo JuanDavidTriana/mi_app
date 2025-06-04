@@ -1,0 +1,193 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* Footer principal: fondo, color y tipografía */
+.main-footer {
+  background: var(--color-footer-bg);
+  color: var(--color-text-light);
+  font-family: var(--font-main);
+  padding: 3rem 0 1.5rem 0;
+}
+
+/* Contenedor principal de columnas del footer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* Cada columna del footer */
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 220px;
+  margin-bottom: 2rem;
+}
+
+/* Columna de logo y políticas */
+.footer-logo-col {
+  flex: 1 1 260px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Logo institucional */
+.footer-logo {
+  width: 120px;
+  margin-bottom: 1.5rem;
+}
+
+/* Lista de políticas institucionales */
+.footer-policies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-policies li {
+  font-size: 0.95rem;
+  color: var(--color-footer-policy);
+  margin-bottom: 0.5rem;
+}
+
+/* Lista de enlaces rápidos */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  margin-bottom: 0.7rem;
+}
+.footer-links a {
+  color: var(--color-footer-link);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: var(--color-footer-link-hover);
+  text-decoration: underline;
+}
+
+/* Información de sedes y contacto */
+.footer-branch strong {
+  color: var(--color-footer-branch);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.footer-branch p {
+  margin: 0.2rem 0 1rem 0;
+  color: var(--color-footer-contact);
+  font-size: 0.97rem;
+}
+.footer-contact {
+  margin-bottom: 1rem;
+  color: var(--color-footer-contact);
+  font-size: 0.97rem;
+}
+.footer-contact strong {
+  color: var(--color-footer-branch);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* Columna de certificaciones y redes sociales */
+.footer-cert-social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-certifications span,
+.footer-social span {
+  font-weight: 600;
+  color: var(--color-footer-branch);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Logos de certificaciones */
+.cert-logos {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.cert-icon {
+  width: 50px;
+  height: auto;
+  background: var(--color-footer-cert-bg);
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+/* Íconos de redes sociales */
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+.social-icons a {
+  color: var(--color-footer-social);
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+.social-icons a:hover {
+  color: var(--color-footer-social-hover);
+}
+
+/* Línea divisoria visual */
+.footer-divider {
+  border: none;
+  border-top: 1px solid var(--color-footer-divider);
+  margin: 2rem 0 1.5rem 0;
+}
+
+/* Información legal y derechos reservados */
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: var(--color-footer-contact);
+  font-size: 0.98rem;
+  gap: 2rem;
+}
+.footer-bottom p {
+  margin: 0.2rem 0;
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  .main-footer {
+    padding: 2rem 0 1rem 0;
+  }
+  .footer-logo {
+    width: 90px;
+  }
+  .footer-col {
+    min-width: 0;
+  }
+  .footer-bottom {
+    font-size: 0.93rem;
+  }
+}

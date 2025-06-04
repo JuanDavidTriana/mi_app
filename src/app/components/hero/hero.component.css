@@ -1,0 +1,38 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.carousel{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(50%);
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+
+.hero-content{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in 0.7s ease-in-out;
+}

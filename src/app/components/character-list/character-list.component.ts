@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RickAndMortyService } from '../rick-and-morty.service';
+import { RickAndMortyService } from '../../api/rick-and-morty.service';
 
 @Component({
   selector: 'app-character-list',
@@ -22,5 +22,9 @@ export class CharacterListComponent {
         this.errorMessage = error.message;
       }
     });    
+  }
+
+  showCharacterDetails(character: any) {
+    console.log('Mostrando detalles del personaje:', character.name);
   }
 }
