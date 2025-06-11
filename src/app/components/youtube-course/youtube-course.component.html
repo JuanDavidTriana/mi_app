@@ -1,0 +1,36 @@
+<section class="youtube-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Curso de Angular - Ibero Software Lab</h2>
+      <p>Aprende Angular con nuestro curso completo de laboratorio</p>
+    </div>
+
+    <div class="channel-info">
+      <div class="channel-header">
+        <img src="assets/imgs/logo.png" alt="Ibero Software Lab Logo" class="channel-logo">
+        <div class="channel-details">
+          <h3>&#64;IberoSoftwareLab</h3>
+          <p>Canal oficial de Ibero Software Lab</p>
+          <a href="https://www.youtube.com/@IberoSoftwareLab" target="_blank" class="btn btn-primary">
+            <i class="fab fa-youtube"></i> Suscribirse
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-grid">
+      <div class="course-card" *ngFor="let video of videos">
+        <div class="video-thumbnail">
+          <img [src]="video.thumbnail" [alt]="video.title">
+        </div>
+        <div class="video-info">
+          <h4>{{video.title}}</h4>
+          <p>{{video.description}}</p>
+          <a [href]="video.url" target="_blank" class="btn btn-outline-primary">
+            <i class="fas fa-play"></i> Ver clase
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,193 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Estilos generales del carrusel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Altura completa de la ventana */
+  overflow: hidden;
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+  filter: brightness(40%); /* Oscurece la imagen para mejor legibilidad del texto */
+  user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Contenedor del contenido del hero */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Contenedor del contenido con animación */
+.hero-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Estilos para el título */
+.carousel-caption h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-light);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el párrafo */
+.carousel-caption p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-text-light);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el botón */
+.carousel-caption .btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-text-light);
+  background: transparent;
+  color: var(--color-text-light);
+}
+
+.carousel-caption .btn:hover {
+  background-color: var(--color-text-light);
+  color: var(--color-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación para el contenido */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries para responsividad */
+@media (max-width: 1200px) {
+  .carousel-caption h1 {
+    font-size: 3.5rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.3rem;
+  }
+
+  .carousel {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+  
+  .carousel-caption .btn {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+  }
+
+  .carousel {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .carousel-caption .btn {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+
+  .carousel {
+    height: 70vh;
+  }
+
+  .carousel-caption {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .carousel-caption .btn {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+
+  .carousel {
+    height: 60vh;
+  }
+
+  .carousel-caption {
+    padding: 0 10px;
+  }
+}
+
+/* Ajustes para dispositivos muy pequeños */
+@media (max-width: 375px) {
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  
+  .carousel-caption .btn {
+    padding: 5px 12px;
+    font-size: 0.85rem;
+  }
+
+  .carousel {
+    height: 50vh;
+  }
+}

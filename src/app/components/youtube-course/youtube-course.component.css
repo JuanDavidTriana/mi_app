@@ -1,0 +1,208 @@
+.youtube-section {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.channel-info {
+  background: var(--card-background);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.channel-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.channel-logo {
+  width: 90px;
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
+  background: none;
+  box-shadow: none;
+}
+
+.channel-details h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.channel-details p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.course-card {
+  background: var(--card-background);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-info {
+  padding: 1.5rem;
+}
+
+.video-info h4 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+.video-info p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  border: none;
+  background: linear-gradient(90deg, #FFC300 0%, #B38600 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(255, 195, 0, 0.15);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline-primary i {
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(90deg, #B38600 0%, #FFC300 100%);
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(255, 195, 0, 0.25);
+}
+
+.btn-outline-primary:hover i {
+  transform: scale(1.2) rotate(8deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .youtube-section {
+    padding: 3rem 0;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .channel-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .channel-logo {
+    width: 70px;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .youtube-section {
+    padding: 2rem 0;
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .channel-info {
+    padding: 1.5rem;
+  }
+
+  .video-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

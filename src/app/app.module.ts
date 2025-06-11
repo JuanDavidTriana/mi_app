@@ -1,32 +1,36 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MiComponenteComponent } from './mi-componente/mi-componente.component';
-import { MiComponente2Component } from './mi-componente2/mi-componente2.component';
-import { FooterComponent } from './footer/footer.component';
-import { CharacterListComponent } from './character-list/character-list.component';
-import { HeaderComponent } from './header/header.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HeroComponent } from './hero/hero.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CharacterListComponent } from './components/character-list/character-list.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { AboutLabsComponent } from './components/about-labs/about-labs.component';
+import { YoutubeCourseComponent } from './components/youtube-course/youtube-course.component';
+import { ThankYouComponent } from './components/thank-you/thank-you.component';
+import { ExampleFormComponent } from './components/example-form/example-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MiComponenteComponent,
-    MiComponente2Component,
     FooterComponent,
     CharacterListComponent,
-    HeaderComponent,
     NavbarComponent,
-    HeroComponent
+    HeroComponent,
+    AboutLabsComponent,
+    YoutubeCourseComponent,
+    ThankYouComponent,
+    ExampleFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

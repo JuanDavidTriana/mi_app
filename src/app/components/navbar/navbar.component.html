@@ -1,0 +1,52 @@
+<!-- Navbar principal con fondo transparente y efecto de scroll -->
+<nav class="navbar navbar-expand-lg fixed-top" [class.navbar-scrolled]="isScrolled">
+  <div class="container">
+    <!-- Logo de la marca -->
+    <a class="navbar-brand" href="#hero">
+      <img src="/assets/logos/image.png" alt="Logo de la empresa" class="brand-logo">
+    </a>
+
+    <!-- Botón del menú móvil (hamburguesa) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido del menú de navegación -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!-- Enlace a la sección de inicio -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#hero">
+            <i class="fas fa-home"></i> Inicio
+          </a>
+        </li>
+        <!-- Enlace a la sección de laboratorio de APIs -->
+        <li class="nav-item">
+          <a class="nav-link" href="#character-list">
+            <i class="fas fa-code"></i> Laboratorio de APIs
+          </a>
+        </li>
+        <!-- Enlace a la sección del curso de Angular -->
+        <li class="nav-item">
+          <a class="nav-link" href="#youtube-course">
+            <i class="fas fa-book"></i> Curso Angular
+          </a>
+        </li>
+        <!-- Enlace a la sección de contacto (footer) -->
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">
+            <i class="fas fa-envelope"></i> Contacto
+          </a>
+        </li>
+        <!-- Botón de inicio de sesión (puede enlazar a una página de login) -->
+        <li class="nav-item">
+          <a class="nav-link btn-login" href="#">
+            <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

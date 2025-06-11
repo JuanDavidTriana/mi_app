@@ -1,0 +1,64 @@
+<!-- Sección principal de personajes de Rick and Morty -->
+<section class="characters-section">
+  <!-- Encabezado de la sección -->
+  <div class="section-header">
+    <!-- Título principal -->
+    <h2 class="section-title">Personajes de Rick and Morty</h2>
+    <!-- Subtítulo descriptivo -->
+    <p class="section-subtitle">Explora el multiverso con estos increíbles personajes</p>
+  </div>
+
+  <!-- Mensaje de error si ocurre algún problema al cargar los personajes -->
+  <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+    <i class="fas fa-exclamation-circle"></i> {{ errorMessage }}
+  </div>
+
+  <!-- Contenedor principal de las tarjetas de personajes -->
+  <div class="characters-container">
+    <!-- Grid de personajes, responsivo -->
+    <div *ngIf="charecters.length > 0" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      <!-- Tarjeta individual de personaje -->
+      <div *ngFor="let character of charecters" class="col">
+        <div class="character-card">
+          <!-- Imagen del personaje con badge de estado -->
+          <div class="character-image">
+            <img [src]="character.image" [alt]="character.name" class="img-fluid">
+            <!-- Badge de estado (Alive, Dead, Unknown) -->
+            <span class="status-badge" [ngClass]="character.status.toLowerCase()">
+              {{ character.status }}
+            </span>
+          </div>
+          
+          <!-- Información textual del personaje -->
+          <div class="character-info">
+            <h3 class="character-name">{{ character.name }}</h3>
+            <div class="character-details">
+              <p class="species">
+                <i class="fas fa-dna"></i> {{ character.species }}
+              </p>
+              <p class="origin">
+                <i class="fas fa-globe"></i> {{ character.origin.name }}
+              </p>
+              <p class="location">
+                <i class="fas fa-map-marker-alt"></i> {{ character.location.name }}
+              </p>
+            </div>
+            
+            <!-- Botón para ver más información (puede abrir modal o navegar) -->
+            <button class="btn-more-info" (click)="showCharacterDetails(character)">
+              <i class="fas fa-info-circle"></i> Ver más información
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensaje de carga mientras se obtienen los personajes -->
+  <div *ngIf="charecters.length == 0 && !errorMessage" class="loading-container">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Cargando...</span>
+    </div>
+    <p class="loading-text">Cargando personajes...</p>
+  </div>
+</section>

@@ -1,6 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+:root {
+  --color-primary: #FFC300;
+  --color-primary-dark: #B38600;
+  --color-secondary: #232323;
+  --color-accent: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-bg: #f8f9fa;
+  --color-bg-dark: #181818;
+  --color-text: #2c3e50;
+  --color-text-light: #e0e0e0;
+  --color-border: #444;
+  --color-link: #FFC300;
+  --color-link-hover: #B38600;
+  --color-footer-bg: #232323;
+  --color-footer-divider: #444;
+  --color-footer-link: #e0e0e0;
+  --color-footer-link-hover: #fff;
+  --color-footer-policy: #b0b0b0;
+  --color-footer-branch: #fff;
+  --color-footer-contact: #b0b0b0;
+  --color-footer-cert-bg: #fff;
+  --color-footer-cert-border: #e0e0e0;
+  --color-footer-social: #e0e0e0;
+  --color-footer-social-hover: #fff;
+  --font-main: 'Montserrat', Arial, sans-serif;
+}
+
 body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
   padding-top: 56px; /* Altura estándar del navbar de Bootstrap */
 }

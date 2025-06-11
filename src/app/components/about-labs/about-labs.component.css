@@ -1,0 +1,120 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* Sección principal de información sobre los laboratorios */
+.about-labs-section {
+  background: var(--color-bg);
+  padding: 4rem 0 3rem 0;
+}
+
+/* Contenedor flexible para texto e imagen */
+.about-labs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Columna de texto */
+.about-labs-text {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+/* Título destacado */
+.about-labs-title {
+  font-size: 2.3rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+/* Descripción de la sección */
+.about-labs-description {
+  color: var(--color-text);
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+/* Lista de características */
+.about-labs-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2.5rem;
+}
+
+.about-labs-features li {
+  font-size: 1.08rem;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-labs-features i {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+}
+
+/* Columna de imagen */
+.about-labs-image {
+  flex: 1 1 320px;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen ilustrativa, protegida contra selección y arrastre */
+.about-labs-image img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  background: #fff;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 900px) {
+  .about-labs-container {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .about-labs-text, .about-labs-image {
+    justify-content: center;
+    align-items: center;
+  }
+  .about-labs-image img {
+    max-width: 270px;
+  }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  .about-labs-section {
+    padding: 2rem 0 1.5rem 0;
+  }
+  .about-labs-title {
+    font-size: 1.5rem;
+  }
+  .about-labs-description {
+    font-size: 1rem;
+  }
+  .about-labs-features li {
+    font-size: 0.98rem;
+  }
+}

@@ -1,0 +1,42 @@
+<!-- Formulario de ejemplo dinámico y validado -->
+<section class="example-form-section">
+  <div class="example-form-container">
+    <h2>Ejemplo de Formulario Dinámico</h2>
+    <!-- Formulario reactivo -->
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <!-- Campo Nombre -->
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input id="name" type="text" formControlName="name" placeholder="Tu nombre" />
+        <!-- Mensaje de error si el campo es inválido -->
+        <div class="error" *ngIf="form.get('name')?.invalid && form.get('name')?.touched">
+          El nombre es obligatorio.
+        </div>
+      </div>
+      <!-- Campo Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" placeholder="tucorreo@ejemplo.com" />
+        <div class="error" *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+          Ingresa un email válido.
+        </div>
+      </div>
+      <!-- Campo Mensaje -->
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" formControlName="message" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+        <div class="error" *ngIf="form.get('message')?.invalid && form.get('message')?.touched">
+          El mensaje es obligatorio (mínimo 10 caracteres).
+        </div>
+      </div>
+      <!-- Botón de envío -->
+      <button type="submit" [disabled]="form.invalid">Enviar</button>
+    </form>
+
+    <!-- Mostrar los datos enviados -->
+    <div class="form-result" *ngIf="submitted">
+      <h3>Datos enviados:</h3>
+      <pre>{{ form.value | json }}</pre>
+    </div>
+  </div>
+</section>
