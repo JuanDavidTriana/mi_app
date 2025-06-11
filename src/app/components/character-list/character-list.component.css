@@ -183,6 +183,7 @@
   .characters-section {
     padding: 2rem 1rem;
   }
+<<<<<<< HEAD
   
   .section-title {
     font-size: 2rem;
@@ -209,10 +210,22 @@
     font-size: 0.75rem;
     padding: 4px 8px;
   }
+=======
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  .character-name {
+    font-size: 1.2rem;
+  }
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
 }
 
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 576px) {
+<<<<<<< HEAD
   .characters-section {
     padding: 1.5rem 0.5rem;
   }
@@ -285,5 +298,15 @@
   .btn-more-info {
     padding: 0.5rem;
     font-size: 0.85rem;
+=======
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .character-info {
+    padding: 1rem;
+  }
+  .btn-more-info {
+    padding: 0.6rem;
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
   }
 }

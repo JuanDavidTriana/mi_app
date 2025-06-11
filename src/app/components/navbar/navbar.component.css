@@ -11,6 +11,7 @@
     font-size: 1.2rem;
 }
 
+<<<<<<< HEAD
 /* Estilos generales del navbar */
 .navbar {
   padding: 1rem 0;
@@ -195,4 +196,39 @@
   .nav-link {
     font-size: 1rem;
   }
+=======
+.navbar{
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.navbar-scrolled {
+    background-color: var(--color-footer-bg, #232323);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.brand-logo{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.navbar-scrolled .brand-logo {
+    height: 40px;
+}
+
+.nav-link {
+    color: var(--color-footer-link, #e0e0e0);
+    transition: all 0.3s ease;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    margin: 0 0.2rem;
+    position: relative;
+}
+
+.nav-item i {
+    margin-right: 0.5rem;
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
 }

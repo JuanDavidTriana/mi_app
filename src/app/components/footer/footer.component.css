@@ -168,6 +168,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 2.5rem;
+<<<<<<< HEAD
     padding: 0 1rem;
   }
 
@@ -207,6 +208,13 @@
 
   .social-icons {
     justify-content: center;
+=======
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
   }
 }
 
@@ -215,6 +223,7 @@
   .main-footer {
     padding: 2rem 0 1rem 0;
   }
+<<<<<<< HEAD
 
   .footer-logo {
     width: 90px;
@@ -289,4 +298,15 @@
   .footer-bottom {
     font-size: 0.9rem;
   }
+=======
+  .footer-logo {
+    width: 90px;
+  }
+  .footer-col {
+    min-width: 0;
+  }
+  .footer-bottom {
+    font-size: 0.93rem;
+  }
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
 }

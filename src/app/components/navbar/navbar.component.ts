@@ -11,6 +11,10 @@ export class NavbarComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
+<<<<<<< HEAD
     this.isScrolled = window.scrollY > 50;
+=======
+    this.isScrolled = window.scrollY > 50; 
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
   }
 }

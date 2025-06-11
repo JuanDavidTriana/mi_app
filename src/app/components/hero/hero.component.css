@@ -1,5 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+<<<<<<< HEAD
 /* Estilos generales del carrusel */
 .carousel {
   position: relative;
@@ -24,6 +25,29 @@
 
 /* Contenedor del contenido del hero */
 .carousel-caption {
+=======
+.carousel{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(50%);
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.carousel-caption{
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,6 +57,7 @@
   padding: 0 20px;
 }
 
+<<<<<<< HEAD
 /* Contenedor del contenido con animación */
 .hero-content {
   opacity: 0;
@@ -190,4 +215,11 @@
   .carousel {
     height: 50vh;
   }
+=======
+
+.hero-content{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in 0.7s ease-in-out;
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
 }

@@ -28,9 +28,14 @@ export class CharacterListComponent {
     });    
   }
 
+<<<<<<< HEAD
   showCharacterDetails(character: any): void {
     // Aquí puedes implementar la lógica para mostrar más detalles
     // Por ejemplo, abrir un modal o navegar a una página de detalles
     console.log('Mostrando detalles de:', character.name);
+=======
+  showCharacterDetails(character: any) {
+    console.log('Mostrando detalles del personaje:', character.name);
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
   }
 }

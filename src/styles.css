@@ -2,8 +2,13 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 :root {
+<<<<<<< HEAD
   --color-primary: #FFC300;
   --color-primary-dark: #B38600;
+=======
+  --color-primary: #007bff;
+  --color-primary-dark: #0056b3;
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
   --color-secondary: #232323;
   --color-accent: #28a745;
   --color-danger: #dc3545;
@@ -13,8 +18,13 @@
   --color-text: #2c3e50;
   --color-text-light: #e0e0e0;
   --color-border: #444;
+<<<<<<< HEAD
   --color-link: #FFC300;
   --color-link-hover: #B38600;
+=======
+  --color-link: #007bff;
+  --color-link-hover: #0056b3;
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
   --color-footer-bg: #232323;
   --color-footer-divider: #444;
   --color-footer-link: #e0e0e0;
@@ -26,6 +36,7 @@
   --color-footer-cert-border: #e0e0e0;
   --color-footer-social: #e0e0e0;
   --color-footer-social-hover: #fff;
+<<<<<<< HEAD
   --font-main: 'Montserrat', Arial, sans-serif;
 }
 
@@ -34,4 +45,14 @@ body {
   color: var(--color-text);
   font-family: var(--font-main);
   padding-top: 56px; /* Altura estándar del navbar de Bootstrap */
+=======
+  --font-main: 'Montserrat', 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  padding-top: 60px; /* Altura estándar del navbar de Bootstrap */
+>>>>>>> 50e55f725a5636754bbf2754fde4ac22c3e4d092
 }
